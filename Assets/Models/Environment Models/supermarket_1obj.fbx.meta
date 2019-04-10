@@ -15,7 +15,42 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Supermarket
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beige
+    second: {fileID: 2100000, guid: 60318b5800e0ec540bb5f5d865aa6069, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fire Red
+    second: {fileID: 2100000, guid: 738d002431f49ba429643e012493a3c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Incredibly light blue
+    second: {fileID: 2100000, guid: efb834f76fd29de4d800e54d5157f8fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Gray
+    second: {fileID: 2100000, guid: 631acfbeb822c36498df86550db09d50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: ac4f07f7c8620a347a4481fef6918256, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stoplight Green
+    second: {fileID: 2100000, guid: 84437203b20fe774b9526906959084a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Turquoise
+    second: {fileID: 2100000, guid: c560f13729c98314b9d2e48c6bdc2f21, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
