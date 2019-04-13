@@ -9,17 +9,21 @@ public class EnemyMovement : MonoBehaviour
     public float speed;
 
     private Transform playerTransform;
+    public float pDist;
 
     private CharacterController controller;
+    private EnemyGeneric enemClass;
     public int direction;
     public string state;
 
     private float vertical;
     private float horizontal;
-    private Vector3 movementVector;
     private float wanderTimer;
+    private Vector3 movementVector;
 
-    public Vector3 attackMoveTarget;
+    private Vector3 attackMoveTarget;
+
+    private float stagTimer;
 
 
     // Start is called before the first frame update
@@ -27,10 +31,12 @@ public class EnemyMovement : MonoBehaviour
     {
         playerTransform = GameObject.Find("Player").transform;
         controller = this.GetComponent<CharacterController>();
+        enemClass = this.GetComponent<EnemyGeneric>();
         direction = -1;
         state = "idle";
         movementVector = new Vector3(0, 0, 0);
         IdleMove();
+        CheckPlayer();
     }
 
     // Update is called once per frame
@@ -49,10 +55,14 @@ public class EnemyMovement : MonoBehaviour
         {
             AttackMove();
         }
+        else
+        {
+            horizontal = 0;
+            vertical = 0;
+        }
 
         CheckPlayer();
-        movementVector.x = direction * horizontal;
-        movementVector.z = vertical;
+        movementVector = new Vector3(direction * horizontal, 0, vertical);
         controller.Move(movementVector.normalized * speed * Time.deltaTime);
     }
 
@@ -84,16 +94,23 @@ public class EnemyMovement : MonoBehaviour
         tmp.x += -direction * 2;
         attackMoveTarget = tmp;
 
-        float playerX = attackMoveTarget.x;
-        float enemyX = this.transform.position.x;
-        float hDiff = playerX - enemyX;
-        if(Mathf.Abs(hDiff) < 0.05)
+        if (movementType == "aggressive")
         {
-            horizontal = 0;
+            float playerX = attackMoveTarget.x;
+            float enemyX = this.transform.position.x;
+            float hDiff = playerX - enemyX;
+            if (Mathf.Abs(hDiff) < 0.05)
+            {
+                horizontal = 0;
+            }
+            else
+            {
+                horizontal = direction * Mathf.Sign(hDiff);
+            }
         }
-        else
+        else if (movementType == "defensive")
         {
-            horizontal = direction * Mathf.Sign(hDiff);
+            horizontal = Random.Range(0.25f, -0.75f);
         }
 
         float playerZ = attackMoveTarget.z;
@@ -106,6 +123,27 @@ public class EnemyMovement : MonoBehaviour
         else
         {
             vertical = Mathf.Sign(vDiff);
+        }
+
+        CheckForAttack();
+    }
+
+    // Called when the enemy is moving to attack the player. If lined up with the player, do attack sequence.
+    void CheckForAttack()
+    {
+        if(movementType == "aggressive")
+        {
+            if (horizontal == 0 && vertical == 0)
+            {
+                enemClass.DoAttack();
+            }
+        }
+        else if (movementType == "defensive")
+        {
+            if (vertical == 0)
+            {
+                enemClass.DoAttack();
+            }
         }
     }
 
@@ -120,6 +158,37 @@ public class EnemyMovement : MonoBehaviour
             direction = -direction;
             this.transform.Rotate(new Vector3(0, 180, 0));
         }
+        // Update distance to player, used by the controller
+        pDist = Mathf.Abs(Vector3.Distance(new Vector3(playerTransform.position.x, 0, playerTransform.position.z), new Vector3(this.transform.position.x, 0, this.transform.position.z)));
+    }
+
+    public void DoAttack()
+    {
+        state = "doingattack";
+        //===play animation===//
+    }
+
+    public void ResumeMovement()
+    {
+        state = "idle";
+        //===play animation===//
+    }
+
+    public void Stagger(float stuntime)
+    {
+        state = "stagger";
+        //===play animation===//
+        stagTimer = stuntime;
+        StartCoroutine("Stagger");
+    }
+
+    private IEnumerable Stagger()
+    {
+        for (float i=0; i < stagTimer; i+=Time.deltaTime)
+        {
+            yield return null;
+        }
+        ResumeMovement();
     }
 
     // Move away from walls.
