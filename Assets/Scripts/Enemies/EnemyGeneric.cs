@@ -12,10 +12,17 @@ public class EnemyGeneric : MonoBehaviour
     public GameObject overmind;
 
     // Called when the player hits the enemy.
-    public void TakeDamage(float atk)
+    public void TakeDamage(float atk, bool isKnockdown)
     {
-        GetComponent<EnemyMovement>().Stagger(0.5f);
         Damage(atk);
+        if (isKnockdown == true)
+        {
+            GetComponent<EnemyMovement>().Knockdown();
+        }
+        else
+        {
+            GetComponent<EnemyMovement>().Stagger();
+        }
     }
 
     // Reduce HP

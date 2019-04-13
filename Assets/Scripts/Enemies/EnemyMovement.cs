@@ -22,8 +22,10 @@ public class EnemyMovement : MonoBehaviour
     private Vector3 movementVector;
 
     private Vector3 attackMoveTarget;
+    public bool wantsToAttack;
 
     private float stagTimer;
+    private float knockSpeed;
 
 
     // Start is called before the first frame update
@@ -34,6 +36,7 @@ public class EnemyMovement : MonoBehaviour
         enemClass = this.GetComponent<EnemyGeneric>();
         direction = -1;
         state = "idle";
+        wantsToAttack = false;
         movementVector = new Vector3(0, 0, 0);
         IdleMove();
         CheckPlayer();
@@ -49,6 +52,10 @@ public class EnemyMovement : MonoBehaviour
             if (wanderTimer <= 0)
             {
                 IdleMove();
+            }
+            if(wantsToAttack == true)
+            {
+                state = "attacking";
             }
         }
         else if (state == "attacking")
@@ -165,6 +172,7 @@ public class EnemyMovement : MonoBehaviour
     public void DoAttack()
     {
         state = "doingattack";
+        wantsToAttack = false;
         //===play animation===//
     }
 
@@ -174,7 +182,7 @@ public class EnemyMovement : MonoBehaviour
         //===play animation===//
     }
 
-    public void Stagger(float stuntime)
+    public void Stagger(float stuntime = 0.4f)
     {
         state = "stagger";
         //===play animation===//
@@ -188,6 +196,32 @@ public class EnemyMovement : MonoBehaviour
         {
             yield return null;
         }
+        ResumeMovement();
+    }
+
+    public void Knockdown(float speed = 5f)
+    {
+        state = "knockdown";
+        //===play animation===//
+        knockSpeed = speed;
+        StartCoroutine("Knockdown");
+    }
+
+    private IEnumerable Knockdown()
+    {
+        while (knockSpeed > 0)
+        {
+            controller.Move(new Vector3(direction * knockSpeed, 0, 0));
+            knockSpeed -= Time.deltaTime;
+            yield return null;
+        }
+        ResumeMovement();
+    }
+
+    private IEnumerable GetUp()
+    {
+        //===play animation===//
+        yield return new WaitForSeconds(0.5f);
         ResumeMovement();
     }
 

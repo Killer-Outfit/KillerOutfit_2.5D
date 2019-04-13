@@ -78,6 +78,7 @@ public class Overmind : MonoBehaviour
             if (closestR != null && MeleeR == null)
             {
                 MeleeR = closestR;
+                SetToAttack(MeleeR);
             }
             return;
         }
@@ -86,6 +87,7 @@ public class Overmind : MonoBehaviour
             if (closestL != null && MeleeL == null)
             {
                 MeleeL = closestL;
+                SetToAttack(MeleeL);
             }
             return;
         }
@@ -97,26 +99,31 @@ public class Overmind : MonoBehaviour
             if (rand == 0)
             {
                 MeleeR = closestR;
+                SetToAttack(MeleeR);
                 return;
             }
             else if (rand == 1)
             {
                 MeleeL = closestL;
+                SetToAttack(MeleeL);
                 return;
             }
         }
         else if (MeleeR == null && MeleeL != null)
         {
             MeleeR = closestR;
+            SetToAttack(MeleeR);
             return;
         }
         else if (MeleeL == null && MeleeR != null)
         {
             MeleeL = closestL;
+            SetToAttack(MeleeL);
             return;
         }
     }
-
+    
+    // Calls a raged attack from the closest ranged enemy to the player
     private void CallRangedAttack()
     {
         GameObject closestL = null;
@@ -157,6 +164,7 @@ public class Overmind : MonoBehaviour
             if (closestR != null && RangedR == null)
             {
                 RangedR = closestR;
+                SetToAttack(RangedR);
             }
             return;
         }
@@ -165,6 +173,7 @@ public class Overmind : MonoBehaviour
             if (closestL != null && RangedL == null)
             {
                 RangedL = closestL;
+                SetToAttack(RangedL);
             }
             return;
         }
@@ -176,24 +185,34 @@ public class Overmind : MonoBehaviour
             if (rand == 0)
             {
                 RangedR = closestR;
+                SetToAttack(RangedR);
                 return;
             }
             else if (rand == 1)
             {
                 RangedL = closestL;
+                SetToAttack(RangedL);
                 return;
             }
         }
         else if (RangedR == null && RangedL != null)
         {
             RangedR = closestR;
+            SetToAttack(RangedR);
             return;
         }
         else if (RangedL == null && RangedR != null)
         {
             RangedL = closestL;
+            SetToAttack(RangedL);
             return;
         }
+    }
+
+    // Tells the enemy that they want to attack when available.
+    private void SetToAttack(GameObject enem)
+    {
+        enem.GetComponent<EnemyMovement>().wantsToAttack = true;
     }
 
     private void UpdateAttackers()
