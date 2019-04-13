@@ -29,7 +29,107 @@ ModelImporter:
     3300000: //RootNode
     4300000: Cube
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: 27d0346d9d195254489ab0037fa62c75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BrownWall
+    second: {fileID: 2100000, guid: e1b4cdd815f911a40b2a1d68a9c693e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DarkGrey
+    second: {fileID: 2100000, guid: 41996da128720074ca058c27ce2fb7ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DefaultWall
+    second: {fileID: 2100000, guid: b63f3744e53036f4299e49f8c922af31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LightWindow
+    second: {fileID: 2100000, guid: c19d4aa841ecdf649aed94fb7e35092a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonBlue
+    second: {fileID: 2100000, guid: 09233303f10c5374588d7cbd58d6857b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonGreen
+    second: {fileID: 2100000, guid: 4b34a3fcf1886704a925ad4920509638, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonLime
+    second: {fileID: 2100000, guid: 68ffabe443673e246a058ac13eb2f435, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonMaroon
+    second: {fileID: 2100000, guid: 451cb66e601821a42b51eb25bc08fa7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonOrange
+    second: {fileID: 2100000, guid: e69f50c4dce9fd44abf3c27f51756f7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonPink
+    second: {fileID: 2100000, guid: 72b5d73f05fb803428ee5f5c70cc539f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonPurple
+    second: {fileID: 2100000, guid: 35c662134dc448e4e9989605e2edc006, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonRed
+    second: {fileID: 2100000, guid: c537ad3b652ece74ea8bcbc32f520bc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonTeal
+    second: {fileID: 2100000, guid: 853cec9646f9cdf41a4f6cb74ce1f6f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonWhite
+    second: {fileID: 2100000, guid: d359dae88d395cd419d1365f80ccff08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NeonYellow
+    second: {fileID: 2100000, guid: 515a8a50942e693478c13c422648cf78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red
+    second: {fileID: 2100000, guid: a36c39803dc06364d8b918363ed0ba2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedWalls
+    second: {fileID: 2100000, guid: ce1cfa333153c904e85702bc3f4b2985, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 1c77f41ae39a42c49b3175c4af703f0e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window
+    second: {fileID: 2100000, guid: 9473f31013695204aa09cfd0ae2b2659, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

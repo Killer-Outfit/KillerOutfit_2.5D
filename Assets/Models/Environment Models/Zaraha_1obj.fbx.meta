@@ -13,7 +13,32 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Zaraha
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black
+    second: {fileID: 2100000, guid: c2b579860662ac748a3e5148a8e1d622, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GreyHandles
+    second: {fileID: 2100000, guid: b56be7a14ed231d409ab877854c82424, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LightWindows
+    second: {fileID: 2100000, guid: 9d72d4873d36b904199f25349eaf6ad9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TealGreen
+    second: {fileID: 2100000, guid: d9a438cddca003540b9a4f039925debb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: f0f08055a94d8f247b9e219126bb428f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
