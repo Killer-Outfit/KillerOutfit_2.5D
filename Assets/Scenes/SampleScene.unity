@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 148635080}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1268,6 +1268,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Initial_Outfit_1
       objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: 100f1a4fcb04a80499faf5cca45aea72, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 400060, guid: 100f1a4fcb04a80499faf5cca45aea72, type: 3}
       propertyPath: m_LocalPosition.x
       value: -26.711685
@@ -1328,6 +1332,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 17ce66a1a09744146ae754e40cd395bd, type: 2}
+    - target: {fileID: 9500000, guid: 100f1a4fcb04a80499faf5cca45aea72, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 100f1a4fcb04a80499faf5cca45aea72, type: 3}
 --- !u!1 &494104215 stripped
@@ -1384,6 +1392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 
   isAttacking: 0
+  energy: 0
   top: {fileID: 416610895}
   misc: {fileID: 300711132}
   bot: {fileID: 1767240078}

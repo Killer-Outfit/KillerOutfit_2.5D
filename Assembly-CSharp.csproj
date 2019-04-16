@@ -53,11 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CameraScript.cs" />
-     <Compile Include="Assets\Map.cs" />
-     <Compile Include="Assets\outfits.cs" />
-     <Compile Include="Assets\playerMove.cs" />
-     <Compile Include="Assets\playerNew.cs" />
+     <Compile Include="Assets\Scripts\Player\outfits.cs" />
+     <Compile Include="Assets\Scripts\Player\playerMove.cs" />
+     <Compile Include="Assets\Scripts\Player\playerNew.cs" />
+     <Compile Include="Assets\Scripts\Scraps.cs" />
+     <Compile Include="Assets\Scripts\World\CameraScript.cs" />
+     <Compile Include="Assets\Scripts\World\Map.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/Evan Blank/Desktop/k/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
