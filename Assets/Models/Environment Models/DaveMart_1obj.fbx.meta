@@ -17,7 +17,52 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: DaveMart
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Beige
+    second: {fileID: 2100000, guid: c31dd0210e8eaa947b26494323c0d2c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Darker Gray
+    second: {fileID: 2100000, guid: d06ab464714a7a449be76be83bef413a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame Gray
+    second: {fileID: 2100000, guid: 37eef1bf720ed78488325503cc996f44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: ad7c37fa551606e4f8f276547abf000b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Green
+    second: {fileID: 2100000, guid: d9914fdb0a2e7d9418c9f7d03ff139a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light Gray
+    second: {fileID: 2100000, guid: 95633d826a7da0145bf2bffa92edf67a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: f9b9cfb8a046b144290b7af1932d6e6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 8d23e64b4a9066a4d9f7d6f571b1ca6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 90d4e3bf3611089448e21d6b250b94f3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
