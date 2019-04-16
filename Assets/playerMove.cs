@@ -70,12 +70,12 @@ public class playerMove : MonoBehaviour
         movementVector.x = inputs.x;
         movementVector.z = inputs.y;
         vVelocity = 0;
-        if (controller.isGrounded == false)
+        if (controller.isGrounded == false || transform.position.y > 0)
         {
-            //Debug.Log("I am on the ground");
+            Debug.Log("I am off the ground");
             vVelocity = Physics.gravity.y;
         }
-        movementVector.y = vVelocity;
+        //movementVector.y = vVelocity;
         controller.Move(movementVector * Time.deltaTime * movementSpeed);
 
         if (rightFacing)

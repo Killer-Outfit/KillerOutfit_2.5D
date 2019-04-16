@@ -84,7 +84,6 @@ public class playerNew : MonoBehaviour
                 state = "run";
             }else
             {
-                anim.SetBool("strut", false);
                 state = "idle";
                 anim.SetTrigger("backtoIdle");
             }

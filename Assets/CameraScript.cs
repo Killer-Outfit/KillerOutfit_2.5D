@@ -22,7 +22,7 @@ public class CameraScript : MonoBehaviour
     void LateUpdate()
     {
         curPlayerPortPos = mainCam.WorldToViewportPoint(player.transform.position);
-        Debug.Log(curPlayerPortPos);
+        //Debug.Log(curPlayerPortPos);
         if((curPlayerPortPos.x >= .5f) && !locked)
         {
             Vector3 desiredPos = new Vector3(player.transform.position.x, mainCam.transform.position.y, mainCam.transform.position.z);
