@@ -17,7 +17,52 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Window_L1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle_inside
+    second: {fileID: 2100000, guid: 00eee562f6ee25f469d0e7ca1cbfd8d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 21c15d70b0f5dfc4a99d79de0a5d0ca5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: ac97467645dadb542af155313a86044d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: a00a34901a31bd2448beda87eea6a9be, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_glass
+    second: {fileID: 2100000, guid: 7e23581de9b6dbe4dace00beff0699af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_inside
+    second: {fileID: 2100000, guid: 966cab90411874f4bb7a17a3eb88ad66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_metal
+    second: {fileID: 2100000, guid: 44c254e2a05db9f44ab01a2c3070a371, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_outside
+    second: {fileID: 2100000, guid: d63e1f844d673674682cd17c8d4bae90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window_stone
+    second: {fileID: 2100000, guid: 54d418b90d74dd544858a4961d3dfc12, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

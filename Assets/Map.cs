@@ -20,7 +20,7 @@ public class Map : MonoBehaviour
     {
        if(mainCam.transform.position.x >= combatPositions[currentCombatNum])
         {
-            mainCam.GetComponent<CameraScript>().locked = true;
+            //mainCam.GetComponent<CameraScript>().locked = true;
             combatEvent();
             currentCombatNum += 1;
         }
