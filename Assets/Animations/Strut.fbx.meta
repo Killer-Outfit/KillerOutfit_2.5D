@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4f6a07d3aba04df49be1ef501a750989
+guid: a90fc8f2d0a089441b1d6d77300c0124
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -68,18 +68,18 @@ ModelImporter:
     100124: Middle Finger-3.L_end
     100126: Middle Finger-3.R
     100128: Middle Finger-3.R_end
-    100130: //RootNode
-    100132: Neck
-    100134: Ring Finger-1.L
-    100136: Ring Finger-1.R
-    100138: Ring Finger-2.L
-    100140: Ring Finger-2.R
-    100142: Ring Finger-3.L
-    100144: Ring Finger-3.L_end
-    100146: Ring Finger-3.R
-    100148: Ring Finger-3.R_end
-    100150: Shoulder.L
-    100152: Shoulder.R
+    100130: Neck
+    100132: Ring Finger-1.L
+    100134: Ring Finger-1.R
+    100136: Ring Finger-2.L
+    100138: Ring Finger-2.R
+    100140: Ring Finger-3.L
+    100142: Ring Finger-3.L_end
+    100144: Ring Finger-3.R
+    100146: Ring Finger-3.R_end
+    100148: Shoulder.L
+    100150: Shoulder.R
+    100152: //RootNode
     100154: Thumb-1.L
     100156: Thumb-1.R
     100158: Thumb-2.L
@@ -159,18 +159,18 @@ ModelImporter:
     400124: Middle Finger-3.L_end
     400126: Middle Finger-3.R
     400128: Middle Finger-3.R_end
-    400130: //RootNode
-    400132: Neck
-    400134: Ring Finger-1.L
-    400136: Ring Finger-1.R
-    400138: Ring Finger-2.L
-    400140: Ring Finger-2.R
-    400142: Ring Finger-3.L
-    400144: Ring Finger-3.L_end
-    400146: Ring Finger-3.R
-    400148: Ring Finger-3.R_end
-    400150: Shoulder.L
-    400152: Shoulder.R
+    400130: Neck
+    400132: Ring Finger-1.L
+    400134: Ring Finger-1.R
+    400136: Ring Finger-2.L
+    400138: Ring Finger-2.R
+    400140: Ring Finger-3.L
+    400142: Ring Finger-3.L_end
+    400144: Ring Finger-3.R
+    400146: Ring Finger-3.R_end
+    400148: Shoulder.L
+    400150: Shoulder.R
+    400152: //RootNode
     400154: Thumb-1.L
     400156: Thumb-1.R
     400158: Thumb-2.L
@@ -189,11 +189,7 @@ ModelImporter:
     2100002: Eye_brown
     4300000: male_generic.obj
     4300002: high-poly.obj
-    7400000: Armature|Idle
-    7400002: Armature|Mic-1
-    7400004: Armature|Mic-2
-    7400006: Armature|Mic-3
-    7400008: Armature|Mic-4
+    7400000: Armature|Walk
     9500000: //RootNode
     13700000: high-poly.obj
     13700002: male_generic.obj
@@ -226,10 +222,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Idle
-      takeName: Armature|Idle
+      name: Armature|Walk
+      takeName: Armature|Walk
       firstFrame: 0
-      lastFrame: 25
+      lastFrame: 29
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -237,118 +233,6 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Mic-1
-      takeName: Armature|Mic-1
-      firstFrame: 0
-      lastFrame: 35
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Mic-2
-      takeName: Armature|Mic-2
-      firstFrame: 0
-      lastFrame: 35
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Mic-3
-      takeName: Armature|Mic-3
-      firstFrame: 0
-      lastFrame: 35
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Mic-4
-      takeName: Armature|Mic-4
-      firstFrame: 0
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -400,7 +284,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   importAnimation: 1
-  copyAvatar: 1
+  copyAvatar: 0
   humanDescription:
     serializedVersion: 2
     human: []
@@ -416,8 +300,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 5b3bf239abac2ed45951d7d9e2973ea2,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
